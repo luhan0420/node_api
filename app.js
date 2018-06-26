@@ -13,12 +13,11 @@ app.all('/api/*', function(req, res, next) { // 允许客户端进行跨域访�
 });
 
 const test = require('./detail/comment.js'); // 获取mock 数据源
+
 app.get('/api/:star', function(req, res) {
-    // res.send(test.filter(item => {
-    //     return item.star === parseInt(req.params['star']);  // ES6 写法进行 客户端传入id进行匹配
-    // }));
     res.send(test[req.params['star']])
 });
+
 app.get('/test/pos', function(req, res) {
     /**
      * mockjs中属性名‘|’符号后面的属性为随机属性，数组对象后面的随机属性为随机数组数量，正则表达式表示随机规则，+1代表自增

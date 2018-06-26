@@ -1,6 +1,6 @@
 module.exports = {
     "test1":{
-        img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016201645858-1342445625.png',
+        img: 'https://image1.ljcdn.com/xf-resblock/0be20ccf-8c1f-4c86-9bcf-4b5fa757674b.jpg.185x185.jpg',
         title: '天下第一锅',
         star: 4,
         price: '88',
